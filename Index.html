@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock · Paper · Scissors</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <div class="game-card">
+    <h1>
+      ✧ RPS
+      <span>v1</span>
+    </h1>
+
+    <!-- Score panel -->
+    <div class="score-panel">
+      <div class="score-badge">🧑 <span id="playerScore">0</span></div>
+      <div class="score-badge">🤖 <span id="computerScore">0</span></div>
+    </div>
+
+    <!-- VS area (choices) -->
+    <div class="vs-area">
+      <div class="choice-box">
+        <div class="choice-label">You</div>
+        <div class="choice-icon" id="playerChoiceIcon">✋</div>
+      </div>
+      <div class="vs-divider">VS</div>
+      <div class="choice-box">
+        <div class="choice-label">Computer</div>
+        <div class="choice-icon" id="computerChoiceIcon">🤖</div>
+      </div>
+    </div>
+
+    <!-- Result message -->
+    <div class="result-message" id="resultMessage">
+      <span>👋</span> pick your move
+    </div>
+
+    <!-- Action buttons -->
+    <div class="action-grid">
+      <button class="choice-btn" data-move="rock">
+        🪨 <span>rock</span>
+      </button>
+      <button class="choice-btn" data-move="paper">
+        📄 <span>paper</span>
+      </button>
+      <button class="choice-btn" data-move="scissors">
+        ✂️ <span>scissors</span>
+      </button>
+    </div>
+
+    <!-- Reset -->
+    <div class="reset-area">
+      <button id="resetBtn">⟳ New game</button>
+    </div>
+    <div class="footer-note">first to 5 wins · click your move</div>
+  </div>
+
+  <script src="App.js"></script>
+</body>
+</html>
